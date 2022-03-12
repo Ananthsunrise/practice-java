@@ -1,0 +1,2 @@
+# practice-java
+practice java codes to improve coding. i am a mechanical engineering student. unfortunately, now a days i am working with java by knowing some basic concepts. so, inorder to improve my coding knowlege, this repo is created for daily practice purpose. in this practice section, i am started my working by writing very small programs. on upcoming days , i will try to implement variety of programs according to my plan.
