@@ -35,4 +35,38 @@ public class NumbersOperation {
         }
         System.out.println(total);
     }
+    public void printingMultiplesOf3And5(){
+        System.out.println("Printing multiples of 3 and 5 form 1 to 20");
+        for (int number = 1; number<=20; number++){
+            if (number%3==0 || number%5==0){
+                System.out.println(number);
+            }
+        }
+    }
+   public void printingNumberInReverseOrder(int no){
+       System.out.println("Printing a given number in reverse order");
+        while (no>0){
+            System.out.println(no%10);
+            no=no/10;
+        }
+   }
+   public void printingNumberOfDigitsOfNumber(int no){
+       System.out.println("Counting number of digits in given number");
+       int count = 0;
+       while (no>0){
+           count++;
+           no=no/10;
+       }
+       System.out.println(count);
+   }
+   public void printingAdditionOfDigitsOfNumber(int no){
+       System.out.println("calculating addition of digits of a number");
+       int total = 0;
+       while (no>0){
+           int reminder = no%10;
+           total= total+reminder;
+           no= no/10;
+       }
+       System.out.println(total);
+   }
 }

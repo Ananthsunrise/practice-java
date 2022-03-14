@@ -1,3 +1,4 @@
+import looping.ArraysOperation;
 import looping.NumbersOperation;
 
 public class JavaPrograms {
@@ -10,6 +11,14 @@ public class JavaPrograms {
         numbersOperation.printingOddNumbers(10);
         numbersOperation.printingEvenNumbers(10);
         numbersOperation.printingAdditionOfFirstNNumbers(4);
+        numbersOperation.printingMultiplesOf3And5();
+        numbersOperation.printingNumberInReverseOrder(5678);
+        numbersOperation.printingNumberOfDigitsOfNumber(1234568998);
+        numbersOperation.printingAdditionOfDigitsOfNumber(1234);
+
+        ArraysOperation arraysOperation = new ArraysOperation();
+        arraysOperation.printingAnArray();
+
     }
 
 }
