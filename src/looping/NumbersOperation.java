@@ -15,7 +15,7 @@ public class NumbersOperation {
     }
     public void printingOddNumbers(int no){
         System.out.println("Printing odd numbers from 1 to N numbers");
-        for (int number = 1; number<=10; number++){
+        for (int number = 1; number<=no; number++){
             System.out.println(number);
             number++;
         }
@@ -69,4 +69,74 @@ public class NumbersOperation {
        }
        System.out.println(total);
    }
+   public void printingFirst8NumbersOfFibonacciSeries(){
+       System.out.println("printing first 8 numbers of fibonacci series");
+       int firstNumber=0;
+       int secondNumber=1;
+       for (int i=0; i<8; i++){
+           System.out.println(firstNumber);
+           int thirdNumber=firstNumber+secondNumber;
+           firstNumber=secondNumber;
+           secondNumber=thirdNumber;
+       }
+   }
+    public void printingFibonacciSeriesTillGivenNumber(int no){
+        System.out.println("printing first 8 numbers of fibonacci series");
+        int firstNumber=0;
+        int secondNumber=1;
+        for (int i=0; i<8; i++){
+            if (firstNumber<=no) {
+                System.out.println(firstNumber);
+            }
+            int thirdNumber=firstNumber+secondNumber;
+            firstNumber=secondNumber;
+            secondNumber=thirdNumber;
+        }
+    }
+    public void printingLCMOfGiveTwoNumbers(int no1, int no2){
+        System.out.println("printing lcm of given two numbers");
+        int lcm;
+        int max = no1>no2 ? no1:no2;
+        while (true){
+            if (max%no1==0 && max%no2==0){
+                 lcm = max;
+                break;
+            }
+            max++;
+        }
+        System.out.println(lcm);
+    }
+    public void printingHCFOfGiveTwoNumbers(int no1, int no2) {
+        System.out.println("printing hcf of given two numbers");
+        int hcf;
+        int min = no1 < no2 ? no1 : no2;
+        while (true) {
+            if (no1 % min == 0 && no2 % min == 0) {
+                hcf = min;
+                break;
+            }
+            min--;
+        }
+        System.out.println(hcf);
+    }
+    public void printingSquareRootOfGivenNumber(int no){
+        System.out.println("printing square root of given number");
+        int n=2;
+        while (n<=no/2){
+            if (no/n==n){
+                System.out.println(n);
+                break;
+            }
+            n++;
+        }
+    }
+    public void printingFactorialOfGivenNumber(int no){
+        System.out.println("printing factorial of given number");
+        int fact = 1;
+        while (no>=1){
+            fact=fact*no;
+            no--;
+        }
+        System.out.println(fact);
+    }
 }

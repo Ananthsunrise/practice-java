@@ -15,6 +15,12 @@ public class JavaPrograms {
         numbersOperation.printingNumberInReverseOrder(5678);
         numbersOperation.printingNumberOfDigitsOfNumber(1234568998);
         numbersOperation.printingAdditionOfDigitsOfNumber(1234);
+        numbersOperation.printingFirst8NumbersOfFibonacciSeries();
+        numbersOperation.printingFibonacciSeriesTillGivenNumber(5);
+        numbersOperation.printingLCMOfGiveTwoNumbers(3,5);
+        numbersOperation.printingHCFOfGiveTwoNumbers(12,30);
+        numbersOperation.printingSquareRootOfGivenNumber(36);
+        numbersOperation.printingFactorialOfGivenNumber(6);
 
         ArraysOperation arraysOperation = new ArraysOperation();
         arraysOperation.printingAnArray();
