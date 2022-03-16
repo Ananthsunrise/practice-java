@@ -81,7 +81,7 @@ public class NumbersOperation {
        }
    }
     public void printingFibonacciSeriesTillGivenNumber(int no){
-        System.out.println("printing first 8 numbers of fibonacci series");
+        System.out.println("printing fibonacci series till given number");
         int firstNumber=0;
         int secondNumber=1;
         for (int i=0; i<8; i++){
@@ -138,5 +138,75 @@ public class NumbersOperation {
             no--;
         }
         System.out.println(fact);
+    }
+    public void printingReverseOfGivenNumber(int no){
+        System.out.println("printing reverse of given number");
+        int reminder = 0;
+        while (no>0){
+            reminder=(reminder*10)+(no%10);
+            no=no/10;
+        }
+        System.out.println(reminder);
+    }
+    public void checkingGivenNumberPalindromeOrNot(int no){
+        System.out.println("check whether the number is palindrome or not");
+        int reminder=0;
+        int no2=no;
+        while (no>0){
+            reminder=(reminder*10)+(no%10);
+            no=no/10;
+        }
+        if (reminder==no2){
+            System.out.println("given number is palindrome");
+        }
+        else {
+            System.out.println("given number is not palindrome");
+        }
+    }
+    public void printingPowerOfThatNumberTillGivenNumber(int no){
+        System.out.println("printing power of that number till given number");
+        int i=1;
+        while (i<=no){
+            System.out.println((int)Math.pow(i,i));
+            i++;
+        }
+    }
+    public void checkGivenNumberPrimeOrNot(int no){
+        System.out.println("check given number is prime or not");
+        int i=2;
+        boolean prime = true;
+        while (i<no){
+            if (no%i==0){
+                System.out.println("given number is not prime");
+                prime=false;
+
+            }
+            i++;
+        }
+        if (prime==true){
+            System.out.println("given number is prime");
+        }
+    }
+    public void printingPrimeNumbersTillGivenNumber(int no){
+        System.out.println("printing prime numbers till given number");
+        System.out.println(2);
+
+        int count=0;
+        int number=3;
+        while (count<no){
+            int i=2;
+            boolean prime = true;
+            while (i<number){
+                if (number%i==0){
+                    prime=false;
+                }
+                i++;
+            }
+            if (prime==true){
+                System.out.println(number);
+                count=count+1;
+            }
+            number+=2;
+        }
     }
 }

@@ -21,6 +21,11 @@ public class JavaPrograms {
         numbersOperation.printingHCFOfGiveTwoNumbers(12,30);
         numbersOperation.printingSquareRootOfGivenNumber(36);
         numbersOperation.printingFactorialOfGivenNumber(6);
+        numbersOperation.printingReverseOfGivenNumber(1234);
+        numbersOperation.checkingGivenNumberPalindromeOrNot(1331);
+        numbersOperation.printingPowerOfThatNumberTillGivenNumber(5);
+        numbersOperation.checkGivenNumberPrimeOrNot(2);
+        numbersOperation.printingPrimeNumbersTillGivenNumber(20);
 
         ArraysOperation arraysOperation = new ArraysOperation();
         arraysOperation.printingAnArray();
