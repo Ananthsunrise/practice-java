@@ -209,4 +209,80 @@ public class NumbersOperation {
             number+=2;
         }
     }
+    public void printingDecimalToBinary(int no){
+        System.out.println("printing a given decimal number to binary number");
+        int decimal = no;
+        String binary = "";
+        while (decimal>0){
+            int rem = decimal%2;
+            binary=rem+binary;
+            decimal=decimal/2;
+        }
+        System.out.println(binary);
+    }
+    public void printingBinaryToDecimal(int no){
+        System.out.println("printing a given binary number to decimal");
+        int binary = no;
+        int i=0;
+        int decimal=0;
+        while (binary>0){
+            int rem = binary%10;
+            decimal= (int) (decimal+(rem*Math.pow(2,i)));
+            binary=binary/10;
+            i++;
+        }
+        System.out.println(decimal);
+    }
+    public void printingAdditionOfDigitsUntilItBecomesSingleDigit(int no){
+        System.out.println("addition of gits of given number until it becomes a single digit");
+        int total=no;
+        while (total>9){
+            no=total;
+            total=0;
+            while (no>0){
+                int rem = no%10;
+                total=total+rem;
+                no=no/10;
+            }
+        }
+        System.out.println(total);
+    }
+    public void checkingGivenNumerArmstrongOrNot(int no){
+        System.out.println("check whether the given number is armstrong or not");
+        int arm=0;
+        int no2=no;
+        while (no>0){
+            int rem = no%10;
+            arm=arm+(rem*rem*rem);
+            no=no/10;
+        }
+        if (arm==no2) {
+            System.out.println("Given number is armstrong number");
+        }
+        else {
+            System.out.println("given number is not armstrong number");
+        }
+    }
+    public void checkingGivenNumberStrongOrNot(int no){
+        System.out.println("checking whether the given number is strong number or not");
+        int no2=no;
+        int strong=0;
+        while (no>0){
+            int no3=no%10;
+            int fact=1;
+            while (no3>0){
+                fact=fact*no3;
+                no3--;
+            }
+            strong=strong+fact;
+            no=no/10;
+        }
+        if (strong==no2){
+            System.out.println("given number is strong number");
+        }
+        else{
+            System.out.println("given number is not strong");
+        }
+
+    }
 }

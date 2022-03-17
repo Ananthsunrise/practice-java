@@ -26,6 +26,11 @@ public class JavaPrograms {
         numbersOperation.printingPowerOfThatNumberTillGivenNumber(5);
         numbersOperation.checkGivenNumberPrimeOrNot(2);
         numbersOperation.printingPrimeNumbersTillGivenNumber(20);
+        numbersOperation.printingDecimalToBinary(7);
+        numbersOperation.printingBinaryToDecimal(1010);
+        numbersOperation.printingAdditionOfDigitsUntilItBecomesSingleDigit(98675);
+        numbersOperation.checkingGivenNumerArmstrongOrNot(153);
+        numbersOperation.checkingGivenNumberStrongOrNot(145);
 
         ArraysOperation arraysOperation = new ArraysOperation();
         arraysOperation.printingAnArray();
