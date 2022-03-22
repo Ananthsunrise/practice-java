@@ -285,4 +285,20 @@ public class NumbersOperation {
         }
 
     }
+    public void checkingGivenNumberNeonOrNot(int no){
+        System.out.println("check the given number is neon number or not");
+        int sum=0;
+        int squre=no*no;
+        while (squre>0){
+            int lastDigit = squre%10;
+            sum=sum+lastDigit;
+            squre=squre/10;
+        }
+        if (sum==no){
+            System.out.println("given number is neon");
+        }
+        else {
+            System.out.println("given number is not neon");
+        }
+    }
 }

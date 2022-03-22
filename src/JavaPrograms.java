@@ -5,6 +5,7 @@ public class JavaPrograms {
     public static void main(String[] args){
         System.out.println("WELCOME TO NUMBERS OPERATION USING LOOPS");
 
+
         NumbersOperation numbersOperation = new NumbersOperation();
         numbersOperation.printingNumberFor5Times(8);
         numbersOperation.printing1ToN(5);
@@ -31,9 +32,15 @@ public class JavaPrograms {
         numbersOperation.printingAdditionOfDigitsUntilItBecomesSingleDigit(98675);
         numbersOperation.checkingGivenNumerArmstrongOrNot(153);
         numbersOperation.checkingGivenNumberStrongOrNot(145);
+        numbersOperation.checkingGivenNumberNeonOrNot(9);
 
         ArraysOperation arraysOperation = new ArraysOperation();
         arraysOperation.printingAnArray();
+        arraysOperation.printingElementsOfArrayInReverseOrder();
+        arraysOperation.printingArrayInReverseOrder();
+        arraysOperation.countingOfParticularElementInArray();
+        arraysOperation.movingAllElementsOfArrayTowardsLeft();
+
 
     }
 
