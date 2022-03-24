@@ -45,6 +45,11 @@ public class JavaPrograms {
         arraysOperation.movingElementsOfArrayTowardsLeftTwice();
         arraysOperation.printingElementsOfArrayInAnotherArrayByReverseOrder();
         arraysOperation.printingNegativeElementsInGivenArray();
+        arraysOperation.copyingNegativeElementsOfGivenArrayInAnotherArray();
+        arraysOperation.copyingOddIndexedElementsOfGivenArrayInAnotherArray();
+        arraysOperation.findingBiggestElementInGivenArray();
+        arraysOperation.additionOfOddIndexedElementsInGivenArray();
+        arraysOperation.findingSmallestElementInGivenArray();
 
 
     }

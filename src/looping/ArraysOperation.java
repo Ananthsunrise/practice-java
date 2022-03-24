@@ -125,6 +125,7 @@ public class ArraysOperation {
         }
     }
     public void printingNegativeElementsInGivenArray(){
+        System.out.println();
         System.out.println("printing only negative numbers in given array");
         int array [] = {10,-20,30,-40,50};
         int i = 0;
@@ -134,6 +135,80 @@ public class ArraysOperation {
             }
             i++;
         }
+    }
+    public void copyingNegativeElementsOfGivenArrayInAnotherArray(){
+        System.out.println();
+        System.out.println("copying only negative numbers from given array to another array");
+        int array1 [] = {-5,8,-3,-2,10};
+        int count = 0;
+        for (int i=0; i<array1.length; i++){
+            if (array1[i] < 0){
+                count++;
+            }
+        }
+        int array2 [] = new int[count];
+        int j=0;
+        for (int i=0; i<array1.length; i++){
+            if (array1[i] < 0){
+                array2[j] = array1[i];
+                if (j == count)
+                    break;
+
+                j++;
+            }
+
+        }
+        for (int k=0; k<array2.length; k++){
+            System.out.print(array2[k]+" ");
+        }
+    }
+    public void copyingOddIndexedElementsOfGivenArrayInAnotherArray(){
+        System.out.println();
+        System.out.println("copying only odd indexed elements of given array in another array");
+        int array1 [] = {10,20,30,40,50,60,70,80,90};
+        int array2 [] = new int[array1.length/2];
+        int i=0;
+        int j=1;
+        while (j<array1.length){
+            array2[i] = array1[j];
+            i++;
+            j+=2;
+        }
+        for (int k=0; k<array2.length; k++){
+            System.out.print(array2[k]+" ");
+        }
+    }
+    public void findingBiggestElementInGivenArray(){
+        System.out.println();
+        System.out.println("finding the biggest element in given array");
+        int array [] = {10,20,50,40,90};
+        int biggest = Integer.MIN_VALUE;
+        for (int i=0; i<array.length; i++){
+            if (array[i]>biggest){
+                biggest = array[i];
+            }
+        }
+        System.out.println(biggest);
+    }
+    public void additionOfOddIndexedElementsInGivenArray(){
+        System.out.println("printing addition of odd indexed elements in given array");
+        int array [] = {10,20,30,40,50};
+        int total = 0;
+        for (int i=1; i<array.length; i+=2){
+            total = total + array[i];
+        }
+        System.out.println(total);
+    }
+    public void findingSmallestElementInGivenArray(){
+        System.out.println("finding smallest element in given array");
+        int array [] = {10,20,5,50,2};
+        int small = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++){
+            if (array[i]<small){
+                small = array[i];
+            }
+        }
+        System.out.println(small);
     }
 
 }
