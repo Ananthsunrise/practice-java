@@ -40,6 +40,11 @@ public class JavaPrograms {
         arraysOperation.printingArrayInReverseOrder();
         arraysOperation.countingOfParticularElementInArray();
         arraysOperation.movingAllElementsOfArrayTowardsLeft();
+        arraysOperation.linearSearchOfElementInArray();
+        arraysOperation.movingElementsOfArrayTowardsRight();
+        arraysOperation.movingElementsOfArrayTowardsLeftTwice();
+        arraysOperation.printingElementsOfArrayInAnotherArrayByReverseOrder();
+        arraysOperation.printingNegativeElementsInGivenArray();
 
 
     }

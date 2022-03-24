@@ -61,5 +61,79 @@ public class ArraysOperation {
             System.out.print(array[j]+" ");
         }
     }
+    public void linearSearchOfElementInArray(){
+        System.out.println();
+        System.out.println("linear search program");
+        int array [] = {10,20,30,40,50};
+        int key = 70;
+        int i=0;
+        while (i<array.length){
+            if (key == array[i]){
+                System.out.println("element is present in given array");
+                break;
+            }
+            i++;
+        }
+        if (i == array.length){
+            System.out.println("element is not present in given array");
+        }
+    }
+    public void movingElementsOfArrayTowardsRight(){
+        System.out.println("moving elements of array towards right");
+        int array [] = {10,20,30,40,50};
+        int temp = array[array.length-1];
+        int i = array.length-1;
+        while (i>0){
+            array[i] = array[i-1];
+            i--;
+        }
+        array[i] = temp;
+        for (int j=0; j<array.length; j++){
+            System.out.print(array[j]+ " ");
+        }
+    }
+    public void movingElementsOfArrayTowardsLeftTwice(){
+        System.out.println();
+        System.out.println("moving elements of array towards left twice");
+        int array [] = {10,20,30,40,50};
+        int temp1 = array[0];
+        int temp2 = array[1];
+        int i =0;
+        while (i<array.length-2){
+            array[i] = array[i+2];
+            i++;
+        }
+        array[i] = temp1;
+        array[i+1] = temp2;
+        for (int j=0; j<array.length; j++){
+            System.out.print(array[j] +" ");
+        }
+    }
+    public void printingElementsOfArrayInAnotherArrayByReverseOrder(){
+        System.out.println();
+        System.out.println("printing elements of array in another array by reverse order");
+        int [] a = {10,20,30,40,50};
+        int [] b = new int [a.length];
+        int i=0,j=a.length-1;
+        while (i<a.length){
+            b[i] = a[j];
+            i++;
+            j--;
+        }
+        for (int k=0; k<b.length; k++){
+            System.out.print(b[k]+" ");
+        }
+    }
+    public void printingNegativeElementsInGivenArray(){
+        System.out.println("printing only negative numbers in given array");
+        int array [] = {10,-20,30,-40,50};
+        int i = 0;
+        while (i<array.length){
+            if (array[i]<0){
+                System.out.print(array[i]+ " ");
+            }
+            i++;
+        }
+    }
 
 }
