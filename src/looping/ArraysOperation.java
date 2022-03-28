@@ -210,5 +210,107 @@ public class ArraysOperation {
         }
         System.out.println(small);
     }
+    public void countingNoOfDuplicateElementsInGivenArray(){
+        int array[]= {10,20,30,10,20,30,40,50,10};
+        int freq [] = new int[array.length];
+        for (int i = 0; i<array.length; i++){
+            int no = array[i];
+            int count = 1;
+            for (int j=i+1; j<array.length; j++){
+                if (no == array[j]){
+                    count++;
+                    freq[j] = -1;
+                }
+            }
+            if (freq[i] != -1){
+                freq[i] = count;
+            }
+        }
+        int countOfDuplicates = 0;
+        for (int i=0; i<freq.length; i++){
+            if (freq[i] > 1){
+                countOfDuplicates++;
+            }
+        }
+        System.out.println("counting number of duplicate elements in given array : "+ countOfDuplicates);
+   }
+   public void countingNoOfUniqueElementsInGivenArray(){
+       int array[]= {10,20,30,10,20,30,40,50,10};
+       int freq [] = new int[array.length];
+       for (int i = 0; i<array.length; i++){
+           int no = array[i];
+           int count = 1;
+           for (int j=i+1; j<array.length; j++){
+               if (no == array[j]){
+                   count++;
+                   freq[j] = -1;
+               }
+           }
+           if (freq[i] != -1){
+               freq[i] = count;
+           }
+       }
+       int countOfUniqueElements = 0;
+       for (int i=0; i<freq.length; i++){
+           if (freq[i] == 1){
+               countOfUniqueElements++;
+           }
+       }
+       System.out.println("counting number of unique elements in given array : "+ countOfUniqueElements);
+   }
+   public void countingOfEachElementsInGivenArray(){
+       System.out.println("Counting of each element in given array");
+       int array[]= {10,20,30,10,20,30,40,50,10};
+       int freq [] = new int[array.length];
+       for (int i = 0; i<array.length; i++){
+           int no = array[i];
+           int count = 1;
+           for (int j=i+1; j<array.length; j++){
+               if (no == array[j]){
+                   count++;
+                   freq[j] = -1;
+               }
+           }
+           if (freq[i] != -1){
+               freq[i] = count;
+           }
+       }
+       for (int i=0; i<freq.length; i++){
+           if (freq[i] != -1){
+               System.out.println(array[i] + " appeared " + freq[i] + " times");
+           }
+       }
+    }
+    public void CopyingOnlyDuplicateElementsInAnotherArray(){
+        System.out.println("copying only duplicate elements in another array");
+        int array[]= {10,20,30,10,20,30,40,50,10};
+        int array2 [] = new int[array.length];
+        int freq [] = new int[array.length];
+        for (int i = 0; i<array.length; i++){
+            int no = array[i];
+            int count = 1;
+            for (int j=i+1; j<array.length; j++){
+                if (no == array[j]){
+                    count++;
+                    freq[j] = -1;
+                }
+            }
+            if (freq[i] != -1){
+                freq[i] = count;
+            }
+        }
+        int j = 0;
+        for (int i=0; i<freq.length; i++){
+            if (freq[i] > 1){
+                array2[j] = array[i];
+                j++;
+            }
+        }
+        for (int i =0; i<array2.length; i++){
+            if (array2[i] > 1){
+                System.out.print(array2[i]+ " ");
+            }
+        }
+    }
 
 }

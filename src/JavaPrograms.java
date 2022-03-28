@@ -50,6 +50,10 @@ public class JavaPrograms {
         arraysOperation.findingBiggestElementInGivenArray();
         arraysOperation.additionOfOddIndexedElementsInGivenArray();
         arraysOperation.findingSmallestElementInGivenArray();
+        arraysOperation.countingNoOfDuplicateElementsInGivenArray();
+        arraysOperation.countingNoOfUniqueElementsInGivenArray();
+        arraysOperation.countingOfEachElementsInGivenArray();
+        arraysOperation.CopyingOnlyDuplicateElementsInAnotherArray();
 
 
     }
